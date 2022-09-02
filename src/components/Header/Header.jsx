@@ -8,11 +8,11 @@ import { IoMdArrowDropdown } from "react-icons/io";
 
 import { useSelector } from "react-redux";
 
-import { auth , firestore } from "../../firebase";
+import { auth } from "../../firebase";
 
 // images
-import AmazonLogo from "../../assets/Amazon.com-Logo.svg.png";
-import Basket from "../../assets/basket.svg";
+import AmazonLogo from "../../assets/Amazon_logo 1.svg";
+import Basket from "../../assets/carbon_shopping-cart-minus.svg";
 
 
 const Header = () => {

@@ -44,7 +44,7 @@ button {
       .header__left .jellyfish__container:hover {
         border-color: #fff; }
     .header__left .amazon__logo {
-      width: 150px;
+      width: 125px;
       margin-top: 0.8rem; }
     .header__left .jellyfish__container {
       display: flex;
@@ -195,7 +195,7 @@ button {
       .header__right .shopping .count {
         position: absolute;
         top: 10px;
-        left: 15px;
+        left: 13.2px;
         font-size: 14px;
         color: #f3a847; }
       .header__right .shopping__basket {
