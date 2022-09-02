@@ -1,4 +1,4 @@
-# <img src="./src/assets/Amazon_logo.svg" width="50" height="20"> Note App with React
+# <img src="./src/assets/Amazon_com_tr_Logo._CB1198675309_.jpg" width="50" height="20"> Amazon App with React
 
 ## Project Features
 
