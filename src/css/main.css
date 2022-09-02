@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif; }
+
+input,
+button {
+  outline: none;
+  border: none; }
+
+button {
+  cursor: pointer; }
+
+.home__container {
+  width: 100%; }
+  .home__container .home__content {
+    background-color: #eaeded;
+    max-width: 1200px;
+    margin: -200px auto 5rem auto;
+    padding: 2rem; }
+
+.header {
+  background-color: #2d3a4d;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  padding: 0 1.5rem;
+  color: #fff;
+  gap: 2rem; }
+  .header__left {
+    display: flex;
+    align-items: center;
+    gap: 1rem; }
+    .header__left .jellyfish__container {
+      height: 60px; }
+    .header__left .header__logo__container,
+    .header__left .jellyfish__container {
+      padding: 0.3rem;
+      border: 1px solid transparent; }
+      .header__left .header__logo__container:hover,
+      .header__left .jellyfish__container:hover {
+        border-color: #fff; }
+    .header__left .amazon__logo {
+      width: 150px;
+      margin-top: 0.8rem; }
+    .header__left .jellyfish__container {
+      display: flex;
+      align-items: center;
+      gap: 0.2rem; }
+    .header__left .jellyfish__content {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      line-height: 1.1rem; }
+      .header__left .jellyfish__content .jellyfish {
+        font-weight: 600;
+        white-space: nowrap; }
+  .header__middle {
+    display: flex;
+    align-items: center;
+    width: 65%; }
+    .header__middle .all__cate {
+      height: 35px;
+      white-space: nowrap;
+      padding: 0 0.5rem;
+      border-radius: 0.3rem 0 0 0.3rem;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s linear; }
+      .header__middle .all__cate:hover {
+        background-color: #dadada; }
+    .header__middle .search__icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 35px;
+      width: 35px;
+      background-color: #f3b666;
+      border-radius: 0 0.3rem 0.3rem 0;
+      transition: all 0.3s linear; }
+      .header__middle .search__icon:hover {
+        background-color: #f3a847; }
+    .header__middle input {
+      height: 35px;
+      width: 100%; }
+  .header__right {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between; }
+    .header__right .login__list,
+    .header__right .return__order,
+    .header__right .shopping {
+      padding: 0.3rem;
+      border: 1px solid transparent;
+      cursor: pointer;
+      height: 60px; }
+      .header__right .login__list:hover,
+      .header__right .return__order:hover,
+      .header__right .shopping:hover {
+        border-color: #ffff; }
+    .header__right .login__list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 1rem;
+      cursor: pointer; }
+      .header__right .login__list .login {
+        white-space: nowrap;
+        font-size: 12px;
+        font-weight: 300; }
+      .header__right .login__list .account {
+        font-size: 14px;
+        font-weight: 600;
+        white-space: nowrap; }
+      .header__right .login__list .modal {
+        padding: 1rem 3rem;
+        border-radius: 0.5rem;
+        position: fixed;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        top: 55px;
+        z-index: 100;
+        right: 150px;
+        background-color: #ffff;
+        color: black; }
+        .header__right .login__list .modal__login {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+          .header__right .login__list .modal__login__text {
+            margin-top: 0.2rem;
+            font-size: 10px; }
+            .header__right .login__list .modal__login__text .member {
+              color: #5959e9; }
+              .header__right .login__list .modal__login__text .member:hover {
+                color: #f3b666;
+                text-decoration: underline; }
+          .header__right .login__list .modal__login .login__btn {
+            display: inline-flex;
+            padding: 0.4rem 0.8rem;
+            background-color: #f3b666;
+            border-radius: 0.3rem;
+            text-decoration: none;
+            color: black;
+            font-size: 14px; }
+            .header__right .login__list .modal__login .login__btn:hover {
+              background-color: #f3a847; }
+        .header__right .login__list .modal__list__account {
+          display: flex;
+          gap: 1rem; }
+          .header__right .login__list .modal__list__account .line__up {
+            height: 100px;
+            width: 1px;
+            background-color: #dddddd; }
+          .header__right .login__list .modal__list__account .modal__list h4,
+          .header__right .login__list .modal__list__account .modal__account h4 {
+            margin-bottom: 0.5rem; }
+          .header__right .login__list .modal__list__account .modal__list div,
+          .header__right .login__list .modal__list__account .modal__account div {
+            font-size: 12px;
+            opacity: 0.8;
+            margin-bottom: 0.2rem; }
+            .header__right .login__list .modal__list__account .modal__list div:hover,
+            .header__right .login__list .modal__list__account .modal__account div:hover {
+              color: #f3b666;
+              text-decoration: underline; }
+    .header__right .return__order {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .header__right .return__order .return {
+        font-size: 12px;
+        font-weight: 300; }
+      .header__right .return__order .order {
+        font-size: 14px;
+        font-weight: 600;
+        white-space: nowrap; }
+    .header__right .shopping {
+      display: flex;
+      gap: 0.5rem;
+      position: relative;
+      align-items: center;
+      color: #ffff;
+      text-decoration: none; }
+      .header__right .shopping .basket__icon {
+        width: 25px; }
+      .header__right .shopping .count {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        font-size: 14px;
+        color: #f3a847; }
+      .header__right .shopping__basket {
+        display: flex;
+        flex-direction: column; }
+        .header__right .shopping__basket .shopping__text {
+          font-weight: 300;
+          font-size: 12px; }
+        .header__right .shopping__basket .basket {
+          font-size: 14px;
+          font-weight: 600; }
+
+.banner__img {
+  width: 100%;
+  mask-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0)); }
+
+.product__card__container .product__1 {
+  margin-bottom: 1rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 1rem; }
+  .product__card__container .product__1 .product__card {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #ffff;
+    z-index: 2;
+    width: 100%;
+    border-radius: 0.3rem; }
+    .product__card__container .product__1 .product__card img {
+      width: 250px; }
+
+.product__card__container .product__2 {
+  margin-bottom: 1rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 1rem; }
+  .product__card__container .product__2 .product__card {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #ffff;
+    z-index: 2;
+    width: 100%;
+    border-radius: 0.3rem; }
+    .product__card__container .product__2 .product__card img {
+      width: 250px; }
+
+.product__card__container .product__1,
+.product__card__container .product__2 {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; }
+
+.product__card__container .buy__btn {
+  color: black;
+  background-color: #f3a847;
+  padding: 0.4rem 2rem;
+  border-radius: 0.3rem;
+  margin: 0.5rem auto 0 auto;
+  display: flex; }
+
+.product__card__container .product__rating {
+  font-size: 24px; }
+
+.checkout__container {
+  margin-bottom: 5rem; }
+  .checkout__container .checkout__banner__container {
+    margin: 2rem 0;
+    padding: 0 2rem; }
+    .checkout__container .checkout__banner__container h3 {
+      margin: 2rem 0 0.3rem 0; }
+    .checkout__container .checkout__banner__container .checkout__con {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      background-color: #e9e8e8;
+      padding: 1rem; }
+      .checkout__container .checkout__banner__container .checkout__con img {
+        width: 100%; }
+      .checkout__container .checkout__banner__container .checkout__con .checkout__price {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0 1rem; }
+        .checkout__container .checkout__banner__container .checkout__con .checkout__price .checkout__price__gift {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          justify-content: center; }
+        .checkout__container .checkout__banner__container .checkout__con .checkout__price .checkout__btn {
+          margin-top: 1rem;
+          padding: 0.4rem 0.8rem;
+          border-radius: 0.3rem;
+          background-color: #f3b666;
+          width: 100%;
+          transition: all 0.3s linear; }
+          .checkout__container .checkout__banner__container .checkout__con .checkout__price .checkout__btn:hover {
+            background-color: #f3a847; }
+  .checkout__container .checkout__item__con {
+    display: flex;
+    flex-direction: column; }
+    .checkout__container .checkout__item__con .checkout__item__c {
+      display: flex; }
+    .checkout__container .checkout__item__con .checkout__item {
+      margin-top: 4rem;
+      margin-bottom: 1rem;
+      display: flex;
+      gap: 2rem;
+      width: 60%; }
+      .checkout__container .checkout__item__con .checkout__item p {
+        font-weight: 700; }
+      .checkout__container .checkout__item__con .checkout__item img {
+        width: 250px; }
+      .checkout__container .checkout__item__con .checkout__item .checkout__item__btn {
+        margin-top: 1rem;
+        padding: 0.4rem 0.8rem;
+        border-radius: 0.3rem;
+        background-color: #f3b666;
+        width: 100%;
+        transition: all 0.3s linear; }
+        .checkout__container .checkout__item__con .checkout__item .checkout__item__btn:hover {
+          background-color: #f3a847; }
+  .checkout__container .checkout__empty {
+    text-align: center; }
+  .checkout__container .amount__count {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 40%; }
+    .checkout__container .amount__count button {
+      padding: 0.4rem 0.8rem;
+      border-radius: 0.3rem;
+      background-color: #f3b666;
+      transition: all 0.3s linear; }
+      .checkout__container .amount__count button:hover {
+        background-color: #f3a847; }
+    .checkout__container .amount__count input {
+      background-color: #ececec; }
+
+.login__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #e6e6e6; }
+  .login__container .login__logo {
+    width: 200px;
+    margin: 2rem 0; }
+  .login__container form {
+    border: 1px solid rgba(126, 126, 126, 0.699);
+    padding: 2rem;
+    max-width: 400px; }
+    .login__container form div {
+      margin-bottom: 1rem; }
+    .login__container form h2 {
+      margin-bottom: 1rem; }
+    .login__container form input {
+      width: 100%;
+      border: 1px solid black; }
+      .login__container form input:focus {
+        box-shadow: rgba(197, 180, 21, 0.12) 0px 2px 4px 0px, rgba(216, 186, 13, 0.32) 0px 2px 16px 0px; }
+    .login__container form .login__btn {
+      margin: 1rem 0;
+      padding: 0.4rem 0.8rem;
+      border-radius: 0.3rem;
+      background-color: #f3b666;
+      width: 100%;
+      transition: all 0.3s linear;
+      border: 1px solid #f3a847; }
+      .login__container form .login__btn:hover {
+        background-color: #f3a847; }
+    .login__container form .login__text {
+      font-size: 12px;
+      text-align: left; }
+  .login__container .account__info {
+    margin: 1rem 0; }
+    .login__container .account__info span {
+      font-size: 12px;
+      color: #767676;
+      font-weight: 400; }
+  .login__container .create__account__btn {
+    width: 400px;
+    background-color: #f3f3f3;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    transition: all 0.3s linear;
+    border: 1px solid black; }
+    .login__container .create__account__btn:hover {
+      background-color: #cecece; }

@@ -1,0 +1,263 @@
+.header {
+  background-color: #2d3a4d;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  padding: 0 1.5rem;
+  color: #fff;
+  gap: 2rem;
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .jellyfish__container {
+      height: 60px;
+    }
+
+    .header__logo__container,
+    .jellyfish__container {
+      padding: 0.3rem;
+      border: 1px solid transparent;
+
+      &:hover {
+        border-color: #fff;
+      }
+    }
+
+    .amazon__logo {
+      width: 150px;
+      margin-top: 0.8rem;
+    }
+
+    .jellyfish__container {
+      display: flex;
+      align-items: center;
+      gap: 0.2rem;
+    }
+
+    .jellyfish__content {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      line-height: 1.1rem;
+
+      .jellyfish {
+        font-weight: 600;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  &__middle {
+    display: flex;
+    align-items: center;
+    width: 65%;
+
+    .all__cate {
+      height: 35px;
+      white-space: nowrap;
+      padding: 0 0.5rem;
+      border-radius: 0.3rem 0 0 0.3rem;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s linear;
+
+      &:hover {
+        background-color: #dadada;
+      }
+    }
+
+    .search__icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 35px;
+      width: 35px;
+      background-color: #f3b666;
+      border-radius: 0 0.3rem 0.3rem 0;
+      transition: all 0.3s linear;
+
+      &:hover {
+        background-color: #f3a847;
+      }
+    }
+
+    input {
+      height: 35px;
+      width: 100%;
+    }
+  }
+
+  &__right {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+
+    .login__list,
+    .return__order,
+    .shopping {
+      padding: 0.3rem;
+      border: 1px solid transparent;
+      cursor: pointer;
+      height: 60px;
+      &:hover {
+        border-color: #ffff;
+      }
+    }
+
+    .login__list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 1rem;
+      cursor: pointer;
+
+      .login {
+        white-space: nowrap;
+        font-size: 12px;
+        font-weight: 300;
+      }
+
+      .account {
+        font-size: 14px;
+        font-weight: 600;
+        white-space: nowrap;
+      }
+
+      .modal {
+        padding: 1rem 3rem;
+        border-radius: 0.5rem;
+        position: fixed;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        top: 55px;
+        z-index: 100;
+        right: 150px;
+        background-color: #ffff;
+        color: black;
+
+        &__login {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          &__text {
+            margin-top: 0.2rem;
+            font-size: 10px;
+
+            .member {
+              color: rgb(89, 89, 233);
+
+              &:hover {
+                color: #f3b666;
+                text-decoration: underline;
+              }
+            }
+          }
+
+          .login__btn {
+            display: inline-flex;
+            padding: 0.4rem 0.8rem;
+            background-color: #f3b666;
+            border-radius: 0.3rem;
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+
+            &:hover {
+              background-color: #f3a847;
+            }
+          }
+        }
+
+        &__list__account {
+          display: flex;
+          gap: 1rem;
+
+          .line__up {
+            height: 100px;
+            width: 1px;
+            background-color: #dddddd;
+          }
+
+          .modal__list,
+          .modal__account {
+            h4 {
+              margin-bottom: 0.5rem;
+            }
+            div {
+              font-size: 12px;
+              opacity: 0.8;
+              margin-bottom: 0.2rem;
+              &:hover {
+                color: #f3b666;
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .return__order {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .return {
+        font-size: 12px;
+        font-weight: 300;
+      }
+
+      .order {
+        font-size: 14px;
+        font-weight: 600;
+        white-space: nowrap;
+      }
+    }
+
+    .shopping {
+      display: flex;
+      gap: 0.5rem;
+      position: relative;
+      align-items: center;
+      color: #ffff;
+      text-decoration: none;
+
+      .basket__icon {
+        width: 25px;
+      }
+
+      .count {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        font-size: 14px;
+        color: #f3a847;
+      }
+
+      &__basket {
+        display: flex;
+        flex-direction: column;
+
+        .shopping__text {
+          font-weight: 300;
+          font-size: 12px;
+        }
+
+        .basket {
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
